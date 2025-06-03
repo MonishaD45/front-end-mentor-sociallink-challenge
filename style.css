@@ -1,65 +1,84 @@
-body{
-  background-color:hsl(0,0%,8%);
-  min-height:100vh;
-  margin:0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 14px;
+body {
+  background-color: hsl(0, 0%, 8%);
+  min-height: 100vh;
+  margin: 0; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  font-size: 14px; 
+  font-family: 'Inter', sans-serif;
+}
+
+
+.input { 
+  background-color: hsl(0, 0%, 12%); 
+  font-family: "Inter", sans-serif;
+  font-weight: 600; 
+  border-radius: 10px; 
+  max-width: 320px; 
+  padding: 24px; 
+  text-align: center; 
+  box-sizing: border-box; /
+
 
 }
-.container{
-  padding:0%;
-  background-color:hsl(0,0%,12%);
-  font-family: "Inter",sans-serif;
-  font-weight: 600;
-  border-radius: 6px;
-  max-width:300px;
-  padding:20px;
+
+img {
+  width: 80px; 
+  height: 80px; 
+  border-radius: 50%; 
+  margin-bottom: 25px; 
+
 }
-.name{
-  color:hsl(0,0%,100%);
-  margin-bottom: 5px;
-  font-size:1.2em;
-  font-weight: 600;
-  margin-top: 15px;
+
+.ame {
+  color: hsl(0, 0%, 100%); 
+  margin-bottom: 8px; 
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-top: 0;
 }
-.place{
-  color: hsl(75,94%,57%);
-  font-size:.8em;
-  margin-top:0px;
-  font-weight:700;
+
+.place {
+  color: hsl(75, 94%, 57%); 
+  font-size: 0.9em; 
+  
+  margin-top: 0px;
+  font-weight: 700; 
+  margin-bottom: 25px;
 }
-.domain{
-  color:hsl(0,0%,100%);
-  font-size:.8em;
-  text-align: center;
-  margin-top: 15px;
-  font-weight: 400;
-  margin-bottom:15px;
+
+.domain {
+  color: hsl(0, 0%, 100%); 
+  font-size: 0.9em;
+
+  margin-top: 0px; 
+  font-weight: 400; 
+  margin-bottom: 25px; 
 }
-img{
-  width:80px;
-  height:80px;
-  border-radius:50%;
-  margin-bottom: 20px;
+
+.medialink {
+  display: flex;
+  flex-direction: column; 
+  gap: 15px; 
 }
-button{
-  display: block;
-  background-color:hsl(0,0%,20%);
-  font-size:0.9em;
-  color:hsl(0,0%,100%);
-  border:0px;
-  width:90%;
-  margin:0 auto 10px;
-  padding:10px 0;
-  height:auto;
-  border-radius: 8px;
-  font-weight: 600;
-  cursor:pointer;
+
+button {
+  display: block; 
+  background-color: hsl(0, 0%, 20%);
+  font-size: 0.9em;
+  color: hsl(0, 0%, 100%);
+  border: 0px; 
+  width: 100%; 
+  margin: 0; 
+  padding: 12px 0; 
+  height: auto; 
+  border-radius: 8px; 
+  font-weight: 700; 
+  cursor: pointer; 
   transition: background-color 0.2s ease, color 0.2s ease; 
 }
-button:hover{
-  background-color: hsl(75,94%,57%);
-  color:hsl(0,0%,8%);
+button:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 8%);
 }
