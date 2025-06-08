@@ -1,83 +1,97 @@
 body {
   background-color: hsl(0, 0%, 8%);
-  min-height: 100vh;
-  margin: 0; 
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  font-size: 14px; 
-  font-family: 'Inter', sans-serif;
+  /* New: Make the body take full viewport height */
+  min-height: 100vh; /* This is crucial for vertical centering */
+  margin: 0; /* Remove default browser margin for body */
+  display: flex; /* Make body a flex container to center its child (.container) */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
 
+.container {
+  /* Idhu body-kulla irukku, so body-yee center pannidhum.
+     Or, you can remove display:flex from body and keep it here, but then you need to make sure .container takes full width/height.
+     For simplicity, let's keep body as the main flex container for centering the card. */
+  /* Remove these properties from .container if you apply them to body */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* If you keep them here, .container should have width:100% and min-height:100vh to work */
 
-.input { 
-  background-color: hsl(0, 0%, 12%); 
+  /* Your existing styles, which are mostly fine for the card background etc. */
+  /* The padding and margin-top were preventing perfect centering, let's remove them from here for now. */
+  padding: 0; /* Already 0% so okay, but ensure no extra space */
+  /* width: 180px;  - You might want to increase this for better look as per challenge design */
+  /* height: 290px; - This makes the card fixed height, which is not ideal. Remove it. */
+  background-color: hsl(0, 0%, 12%);
   font-family: "Inter", sans-serif;
-  font-weight: 600; 
-  border-radius: 10px; 
-  max-width: 320px; 
-  padding: 24px; 
-  text-align: center; 
-  box-sizing: border-box; /
-
-
+  font-weight: 600;
+  /* margin-top: 20px; - Remove this to allow perfect centering */
+  border-radius: 6px;
+  /* Add max-width for responsiveness, and a bit more padding inside for better look */
+  max-width: 300px; /* Adjust as needed per design */
+  padding: 20px; /* Add some internal padding to make it look better */
+  text-align: center; /* To center text inside the card */
 }
 
-img {
-  width: 80px; 
-  height: 80px; 
-  border-radius: 50%; 
-  margin-bottom: 25px; 
-
+/* Adjust font sizes - they look very small now (0.7em, 0.4em).
+   Frontend Mentor designs usually have larger text.
+   A base font-size in body, then use rem or em from there. */
+body {
+  /* ... (other properties) ... */
+  font-size: 14px; /* Base font size, adjust as per challenge design */
 }
 
-.ame {
-  color: hsl(0, 0%, 100%); 
-  margin-bottom: 8px; 
-  font-size: 1.5em;
-  font-weight: 700;
-  margin-top: 0;
+.name {
+  color: hsl(0, 0%, 100%);
+  /* text-align: center; - Already done by .container text-align: center or can be specific here */
+  margin-bottom: 5px;
+  font-size: 1.2em; /* Increase font size */
+  font-weight: 600;
+  margin-top: 15px; /* Add some top margin here instead of img */
 }
 
 .place {
-  color: hsl(75, 94%, 57%); 
-  font-size: 0.9em; 
-  
+  color: hsl(75, 94%, 57%);
+  font-size: 0.8em; /* Increase font size */
+  /* text-align: center; */
   margin-top: 0px;
-  font-weight: 700; 
-  margin-bottom: 25px;
+  font-weight: 700;
 }
 
 .domain {
-  color: hsl(0, 0%, 100%); 
-  font-size: 0.9em;
-
-  margin-top: 0px; 
-  font-weight: 400; 
-  margin-bottom: 25px; 
+  color: hsl(0, 0%, 100%);
+  font-size: 0.8em; /* Increase font size */
+  /* text-align: center; */
+  margin-top: 15px;
+  font-weight: 400;
+  margin-bottom: 15px; /* Increase margin-bottom */
 }
 
-.medialink {
-  display: flex;
-  flex-direction: column; 
-  gap: 15px; 
+img {
+  width: 80px; /* Increase image size for better visibility */
+  height: 80px; /* Ensure height matches width */
+  border-radius: 50%;
+  /* margin: 19px 35% 0px; - Remove this specific margin */
+  margin-bottom: 20px; /* Add margin below image to separate from name */
 }
 
 button {
-  display: block; 
+  display: block;
   background-color: hsl(0, 0%, 20%);
-  font-size: 0.9em;
+  font-size: 0.9em; /* Increase font size */
   color: hsl(0, 0%, 100%);
-  border: 0px; 
-  width: 100%; 
-  margin: 0; 
-  padding: 12px 0; 
-  height: auto; 
-  border-radius: 8px; 
-  font-weight: 700; 
-  cursor: pointer; 
-  transition: background-color 0.2s ease, color 0.2s ease; 
+  border: 0px;
+  width: 90%; /* Make buttons wider */
+  margin: 0 auto 10px; /* Center buttons and add margin below */
+  padding: 10px 0; /* Add more padding for height */
+  height: auto; /* Remove fixed height */
+  border-radius: 8px; /* Slightly larger border-radius */
+  font-weight: 600; /* Ensure font weight is good */
+  cursor: pointer; /* Add pointer cursor on hover */
+  transition: background-color 0.2s ease, color 0.2s ease; /* Smooth transition for hover */
 }
+
 button:hover {
   background-color: hsl(75, 94%, 57%);
   color: hsl(0, 0%, 8%);
