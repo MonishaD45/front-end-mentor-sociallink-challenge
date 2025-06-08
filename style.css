@@ -1,38 +1,21 @@
 body {
   background-color: hsl(0, 0%, 8%);
-  /* New: Make the body take full viewport height */
-  min-height: 100vh; /* This is crucial for vertical centering */
-  margin: 0; /* Remove default browser margin for body */
-  display: flex; /* Make body a flex container to center its child (.container) */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-}
+  min-height: 100vh;
+  margin: 0; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
 
 .container {
-  /* Idhu body-kulla irukku, so body-yee center pannidhum.
-     Or, you can remove display:flex from body and keep it here, but then you need to make sure .container takes full width/height.
-     For simplicity, let's keep body as the main flex container for centering the card. */
-  /* Remove these properties from .container if you apply them to body */
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* If you keep them here, .container should have width:100% and min-height:100vh to work */
 
-  /* Your existing styles, which are mostly fine for the card background etc. */
-  /* The padding and margin-top were preventing perfect centering, let's remove them from here for now. */
-  padding: 0; /* Already 0% so okay, but ensure no extra space */
-  /* width: 180px;  - You might want to increase this for better look as per challenge design */
-  /* height: 290px; - This makes the card fixed height, which is not ideal. Remove it. */
+  padding: 0;
   background-color: hsl(0, 0%, 12%);
   font-family: "Inter", sans-serif;
   font-weight: 600;
-  /* margin-top: 20px; - Remove this to allow perfect centering */
   border-radius: 6px;
-  /* Add max-width for responsiveness, and a bit more padding inside for better look */
-  max-width: 300px; /* Adjust as needed per design */
-  padding: 20px; /* Add some internal padding to make it look better */
-  text-align: center; /* To center text inside the card */
-}
+  max-width: 500px; 
+  padding: 20px; 
+  text-align: center; 
 
 /* Adjust font sizes - they look very small now (0.7em, 0.4em).
    Frontend Mentor designs usually have larger text.
