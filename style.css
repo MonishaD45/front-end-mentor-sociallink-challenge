@@ -5,39 +5,34 @@ body {
   display: flex;
   justify-content: center; 
   align-items: center; 
+}
 
 .container {
-
   padding: 0;
   background-color: hsl(0, 0%, 12%);
   font-family: "Inter", sans-serif;
   font-weight: 600;
   border-radius: 6px;
-  max-width: 500px; 
+  max-width: 300px; 
   padding: 20px; 
   text-align: center; 
-
-/* Adjust font sizes - they look very small now (0.7em, 0.4em).
-   Frontend Mentor designs usually have larger text.
-   A base font-size in body, then use rem or em from there. */
+  width:30%;
+}
 body {
-  /* ... (other properties) ... */
-  font-size: 14px; /* Base font size, adjust as per challenge design */
+  font-size: 14px; 
 }
 
 .name {
   color: hsl(0, 0%, 100%);
-  /* text-align: center; - Already done by .container text-align: center or can be specific here */
   margin-bottom: 5px;
-  font-size: 1.2em; /* Increase font size */
+  font-size: 1.2em; 
   font-weight: 600;
-  margin-top: 15px; /* Add some top margin here instead of img */
+  margin-top: 15px; 
 }
 
 .place {
   color: hsl(75, 94%, 57%);
-  font-size: 0.8em; /* Increase font size */
-  /* text-align: center; */
+  font-size: 0.8em;
   margin-top: 0px;
   font-weight: 700;
 }
