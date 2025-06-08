@@ -13,11 +13,10 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 600;
   border-radius: 6px;
-  max-width: 300px; 
+  width:300px;
   padding: 20px; 
   text-align: center; 
-  width:30%;
-  height:90%;
+
 }
 body {
   font-size: 14px; 
